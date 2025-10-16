@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+//funkcja sumuje cyfry liczby
 int sumacyfrl(int a)
 {
     int pomoc = 0;
@@ -11,6 +12,8 @@ int sumacyfrl(int a)
     }
     return pomoc;
 }
+
+//czysto teoretycznie wedlug polecenia powinienem zapytac o date w formacie ddmmrrrr ale to troche malo ludzkie 
 int main()
 {
     int day = 0;
@@ -18,7 +21,7 @@ int main()
     int year = 0;
 
     printf("\n\n\n*****    WITAM DZISIAJ POLICZYMY JAKIM NUMERKIEM JESTES    *****\n\n\n");
-
+//tutaj sie zaczyna dluga sekcja w ktorej licze czy dany dzien istnieje, lata przystepne, miesiace majace 31 i 30 itp
     printf("prosze o podanie roku urodzenia: ");
       while(true)
     {
@@ -92,11 +95,12 @@ int main()
             printf("prosze o podanie dnia urodzenia z przedzialu 1-30: ");
         }
     }
-
+//tutaj gdy juz sprawdziem czy dzien istnial dodaje ja do jednej liczby
 long int numer = day*1000000+month*10000+year;
 //printf("%ld\n",numer);
 //printf("%d\n",sumacyfrl(numer));
 int suma = sumacyfrl(numer);
+// i uzywam mojej funkcji w kolo az nie otrzymam liczby jednocyfrowej
 while(suma>=10)
 {
     suma = sumacyfrl(suma);

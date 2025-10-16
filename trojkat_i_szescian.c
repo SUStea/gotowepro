@@ -9,6 +9,7 @@ int main()
 
     while(true)
     {
+// w tym miejscu probowalem roznych metod, uzywalem scanf("%c,&odp"), oraz scanf(" %c,&odp") ale tak naprawde nie dziala nic 
         odp = getchar();
         if((int)odp==116||(int)odp==84)
         {
@@ -41,6 +42,10 @@ int main()
         wynik = ((bok*bok)*sqrt(3))/4;
         printf("oto twoj wynik: %f",wynik);
     }
+//wiem ze tutaj moglbym uzyc funkcji pow(), ale na code blocks nie chce mi sie to wtedy kompilowac
+//musze uzywac gcc bezposrednio z konsoli i jest to malo wygodne 
+//wiec poki nie zostane zmuszony to bede uzywal prostszej formy
+//ktora pod wzgledem obliczeniowym pewnie tez jest przyjazniejsza dla komputera 
     else
     {
         wynik = (bok*bok*bok);
