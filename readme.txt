@@ -1,1 +1,1 @@
-no generalnie testuje gita ale moze kiedys cos tu bedzie
+mega sie znam na gitcie juz :)
